@@ -1,0 +1,34 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Secrets</title>
+        <style media="screen">
+          body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+        </style>
+    </head>
+    <body>
+        <div id="sawo-container" style="height: 300px; width: 300px;"></div>
+        <div id="status"></div>
+        <script src="http://websdk.sawolabs.com/sawo.min.js"></script>
+        <script>
+            var config = {
+                containerID: "sawo-container",
+                identifierType: "phone_number_sms",
+                apiKey: "abfbf992-2d2f-4eea-a2af-47bc1e605ccb", // add your api key here
+                onSuccess: (payload) => {
+                    document.getElementById("status").innerHTML =
+                        "Login Success";
+                    window.location.href="write.php"
+                },
+            };
+            var sawo = new Sawo(config);
+            sawo.showForm();
+        </script>
+    </body>
+</html>

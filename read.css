@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap')
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto slab',sans-serif;
+  color: #f2f2f2;
+  background-image:url(images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-weight: bold;
+  text-align: center;
+}
+h1{
+  font-family: 'IBM Plex Mono', monospace;
+  color: #f2f2f2;
+  text-align: center;
+}
+.container{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 12px;
+  padding: 1%;
+  margin-top: 1%;
+  text-align: center;
+  backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.14);
+  color: #f2f2f2;
+}
+h5{
+  font-size: large;
+  padding-bottom: 1%;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #f2f2f2;
+  text-align: center;
+}
+p{
+  font-size: large;
+  text-align: center;
+
+}
+.btn:hover{
+  transition:900ms;
+  transform: scale(1.15);
+}
